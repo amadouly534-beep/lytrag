@@ -1,0 +1,37 @@
+{
+  "name": "lytrag",
+  "version": "0.1.0",
+  "description": "Browser-based remote desktop over WebRTC (screen sharing + remote input channel).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build:client": "esbuild src/client/host.ts src/client/viewer.ts --bundle --format=esm --outdir=public/dist --sourcemap",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build": "npm run build:client && npm run build:server",
+    "dev:client": "esbuild src/client/host.ts src/client/viewer.ts --bundle --format=esm --outdir=public/dist --sourcemap --watch",
+    "dev:server": "tsx watch src/server/index.ts",
+    "dev": "concurrently -n client,server -c blue,green \"npm:dev:client\" \"npm:dev:server\"",
+    "start": "node dist/server/index.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "lint": "eslint .",
+    "test": "node --import tsx --test \"src/**/*.test.ts\""
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.0",
+    "@types/ws": "^8.5.12",
+    "concurrently": "^8.2.2",
+    "esbuild": "^0.23.1",
+    "eslint": "^9.9.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4",
+    "typescript-eslint": "^8.2.0"
+  }
+}

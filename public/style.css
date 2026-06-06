@@ -1,0 +1,95 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  background: #11141a;
+  color: #e6e8eb;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+a {
+  color: #6ea8fe;
+}
+
+button,
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  border-radius: 6px;
+  background: #2b6cff;
+  color: #fff;
+  font: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button.secondary {
+  background: #3a3f4b;
+}
+
+.center {
+  max-width: 28rem;
+  margin: 10vh auto;
+  text-align: center;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.hint {
+  color: #8b909a;
+  font-size: 0.9rem;
+}
+
+video {
+  width: 100%;
+  max-height: 80vh;
+  background: #000;
+  border-radius: 8px;
+  outline: none;
+}
+
+/* Host-side visualisation of the viewer's pointer. */
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  border: 1px dashed #3a3f4b;
+  border-radius: 8px;
+}
+
+.remote-cursor {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 50%;
+  background: #ff5d5d;
+  pointer-events: none;
+  transition: left 0.03s linear, top 0.03s linear;
+}
