@@ -10,11 +10,14 @@
    ------------------------------------------------------------------------- */
 :root {
   /* Marke / Farben */
-  --navy:          #0f1b2d;   /* primär, dunkler Grund */
-  --navy-2:        #15263d;   /* leicht heller (Cards auf dunkel) */
-  --navy-3:        #1d3350;   /* Hover/Border auf dunkel */
+  --navy:          #0d2b1d;   /* primär, dunkler Grund */
+  --navy-2:        #133a28;   /* leicht heller (Cards auf dunkel) */
+  --navy-3:        #1c4d35;   /* Hover/Border auf dunkel */
   --green:         #1fc26b;   /* Akzent — NUR auf dunkel oder als Button mit dunkler Schrift */
-  --green-600:     #19a85b;   /* Button-Hover */
+  --green-600:     #19a85b;
+  --gold:          #f7c600;   /* Guinea-Gelb: CTA & Akzente */
+  --gold-600:      #ddaf00;
+  --red:           #ce1126;   /* Guinea-Rot: sparsame Akzente */   /* Button-Hover */
   --green-text:    #0f9d58;   /* barrierefreies Grün für TEXT/Links auf WEISS */
   --green-text-dk: #0c7f47;   /* Hover für grünen Text auf Weiß */
 
@@ -227,10 +230,10 @@ p + p { margin-top: var(--space-4); }
 /* Eyebrow auf dunklem Grund */
 .on-dark .eyebrow,
 .hero .eyebrow,
-.cta-band .eyebrow { color: var(--green); }
+.cta-band .eyebrow { color: var(--gold); }
 .on-dark .eyebrow::before,
 .hero .eyebrow::before,
-.cta-band .eyebrow::before { background: var(--green); }
+.cta-band .eyebrow::before { background: var(--red); }
 
 .text-green { color: var(--green-text); }      /* grüner Text auf Weiß (a11y) */
 .text-muted { color: var(--ink-muted); }
@@ -359,12 +362,12 @@ p + p { margin-top: var(--space-4); }
 
 /* Primär = Markengrün mit DUNKLER Schrift (Kontrast a11y) */
 .btn-primary {
-  --btn-bg: var(--green);
+  --btn-bg: var(--gold);
   --btn-fg: var(--navy);
   box-shadow: var(--sh-green);
 }
 .btn-primary:hover {
-  --btn-bg: var(--green-600);
+  --btn-bg: var(--gold-600);
   color: var(--navy);
   transform: translateY(-2px);
   box-shadow: 0 16px 34px rgba(31, 194, 107, 0.38);
@@ -372,12 +375,12 @@ p + p { margin-top: var(--space-4); }
 
 /* Anruf-Button = wie Primär, semantischer Name */
 .btn-call {
-  --btn-bg: var(--green);
+  --btn-bg: var(--gold);
   --btn-fg: var(--navy);
   box-shadow: var(--sh-green);
 }
 .btn-call:hover {
-  --btn-bg: var(--green-600);
+  --btn-bg: var(--gold-600);
   color: var(--navy);
   transform: translateY(-2px);
   box-shadow: 0 16px 34px rgba(31, 194, 107, 0.38);
@@ -386,6 +389,9 @@ p + p { margin-top: var(--space-4); }
 /* Solid Navy (auf hellem Grund) */
 .btn-solid { --btn-bg: var(--navy); --btn-fg: var(--white); }
 .btn-solid:hover { --btn-bg: var(--navy-3); color: var(--white); transform: translateY(-2px); box-shadow: var(--sh-md); }
+/* Auf dunklem Grund: Guinea-Gelb, sonst unsichtbar */
+.section--navy .btn-solid, .hero .btn-solid, .on-dark .btn-solid, .cta-band .btn-solid { --btn-bg: var(--gold); --btn-fg: var(--navy); }
+.section--navy .btn-solid:hover, .hero .btn-solid:hover, .on-dark .btn-solid:hover, .cta-band .btn-solid:hover { --btn-bg: var(--gold-600); color: var(--navy); }
 
 /* Ghost / Sekundär (Outline) */
 .btn-ghost {
@@ -621,7 +627,7 @@ p + p { margin-top: var(--space-4); }
   color: var(--white);
   margin-bottom: var(--space-4);
 }
-.hero h1 .accent { color: var(--green); }
+.hero h1 .accent { color: var(--gold); }
 .hero .lead { color: var(--on-navy-soft); max-width: 52ch; }
 
 .hero__media {
