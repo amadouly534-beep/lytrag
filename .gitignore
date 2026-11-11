@@ -5,3 +5,4 @@ public/dist/
 .DS_Store
 .env
 .env.local
+website/_preview/
