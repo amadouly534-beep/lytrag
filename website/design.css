@@ -10,9 +10,9 @@
    ------------------------------------------------------------------------- */
 :root {
   /* Marke / Farben */
-  --navy:          #0d2b1d;   /* primär, dunkler Grund */
-  --navy-2:        #133a28;   /* leicht heller (Cards auf dunkel) */
-  --navy-3:        #1c4d35;   /* Hover/Border auf dunkel */
+  --navy:          #14603c;   /* primär, dunkler Grund */
+  --navy-2:        #1a7249;   /* leicht heller (Cards auf dunkel) */
+  --navy-3:        #228a58;   /* Hover/Border auf dunkel */
   --green:         #1fc26b;   /* Akzent — NUR auf dunkel oder als Button mit dunkler Schrift */
   --green-600:     #19a85b;
   --gold:          #f7c600;   /* Guinea-Gelb: CTA & Akzente */
@@ -22,17 +22,17 @@
   --green-text-dk: #0c7f47;   /* Hover für grünen Text auf Weiß */
 
   --white:         #ffffff;
-  --surface:       #f6f8fa;   /* helle Sektions-Fläche */
-  --surface-2:     #eef2f6;   /* abwechselnde Fläche / Borders auf hell */
+  --surface:       #f3faf5;   /* helle Sektions-Fläche */
+  --surface-2:     #e7f3ea;   /* abwechselnde Fläche / Borders auf hell */
 
   --ink:           #1f2a37;   /* Haupttext */
   --ink-soft:      #51606f;   /* Sekundärtext */
   --ink-muted:     #6b7785;   /* gedämpft / Hinweise */
-  --line:          #e3e8ee;   /* helle Trennlinie */
+  --line:          #dcebe0;   /* helle Trennlinie */
 
   --on-navy:       #ffffff;
-  --on-navy-soft:  #c4d0de;   /* Sekundärtext auf navy */
-  --on-navy-muted: #8ea2ba;   /* gedämpft auf navy */
+  --on-navy-soft:  #d9ecdd;   /* Sekundärtext auf navy */
+  --on-navy-muted: #b9d6c1;   /* gedämpft auf navy */
 
   --star:          #f5b50a;   /* Sterne */
 
