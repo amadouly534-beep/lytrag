@@ -1,0 +1,499 @@
+<?php /* Template: komplette Seite, 1:1 aus lytrag.org */ ?>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Immobilier &amp; Construction en Guinée pour la diaspora | LytraG</title>
+<meta name="description" content="LytraG accompagne la diaspora et les Guinéens : achat de terrains et biens vérifiés, construction clé en main, fourniture de matériaux et gestion de chantier à distance avec suivi photo/vidéo et paiements par jalons sécurisés.">
+<link rel="canonical" href="https://www.lytrag.org/immobilier.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LytraG">
+<meta property="og:title" content="Immobilier &amp; Construction en Guinée pour la diaspora | LytraG">
+<meta property="og:description" content="Acheter des terrains et biens vérifiés, construire clé en main et gérer son chantier à distance depuis votre téléphone : suivi photo/vidéo, paiements par jalons, titres vérifiés.">
+<meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/construction.jpg">
+<meta property="og:url" content="https://www.lytrag.org/immobilier.html">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Immobilier &amp; Construction en Guinée pour la diaspora | LytraG">
+<meta name="twitter:description" content="Acheter des terrains et biens vérifiés, construire clé en main et gérer son chantier à distance depuis votre téléphone : suivi photo/vidéo, paiements par jalons, titres vérifiés.">
+<meta name="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/construction.jpg">
+
+<link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/favicon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/favicon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/design.css">
+
+<!-- JSON-LD: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Immobilier et construction en Guinée",
+  "provider": {
+    "@type": "Organization",
+    "name": "LytraG",
+    "url": "https://www.lytrag.org/",
+    "email": "contact@lytrag.org",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Conakry",
+      "addressCountry": "GN"
+    }
+  },
+  "areaServed": { "@type": "Country", "name": "Guinée" },
+  "audience": { "@type": "Audience", "audienceType": "Diaspora africaine et résidents en Guinée" }
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Puis-je construire en Guinée depuis l'étranger sans me déplacer ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. C'est tout l'objet de LytraG : votre présence sur place est optionnelle. Vous suivez l'avancement de votre chantier à distance grâce à des photos et vidéos régulières, et vous validez chaque étape depuis votre téléphone. Nous coordonnons les équipes locales pour vous, en toute transparence."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment puis-je être sûr que le terrain ou le bien est légitime ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous vérifions les titres et documents de propriété avant tout achat. Vous recevez un dossier clair sur le bien, sa situation et ses papiers, afin d'acheter en confiance et d'éviter les litiges fonciers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment se font les paiements pour un projet de construction ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les paiements sont organisés par jalons (étapes) : vous ne payez chaque phase qu'une fois le travail réalisé et constaté. Cela protège votre argent et garantit que les fonds servent réellement à faire avancer votre projet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Proposez-vous aussi les matériaux de construction ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui. LytraG peut fournir les matériaux nécessaires à votre chantier (ciment, fer, briques, finitions, etc.) et coordonner leur livraison sur le site, pour vous éviter les mauvaises surprises de qualité ou de prix."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="LytraG – Accueil">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo.png" alt="Logo LytraG">
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <input type="checkbox" id="navt" class="nav-toggle" aria-label="Ouvrir et fermer le menu">
+        <label for="navt" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+        <div class="nav__panel">
+          <ul class="nav__list">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/marketplace/">Place de marché</a></li>
+            <li><a href="/immobilier/" aria-current="page">Immobilier &amp; Construction</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/a-propos/">À propos</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+
+          <div class="nav__lang" aria-label="Choix de la langue" style="display:flex; gap:.4rem; align-items:center; padding:.5rem 0;">
+            <span aria-current="true" style="font-weight:700;">FR</span>
+            <span aria-hidden="true">|</span>
+            <span title="Bientôt disponible" style="opacity:.5; cursor:not-allowed;">EN</span>
+            <span aria-hidden="true">|</span>
+            <span title="Bientôt disponible" style="opacity:.5; cursor:not-allowed;">DE</span>
+          </div>
+
+          <div class="nav__cta-mobile">
+            <a class="btn btn-solid btn-block" href="/contact/">Nous contacter</a>
+          </div>
+        </div>
+
+        <div class="nav__lang nav__lang--desktop" aria-label="Choix de la langue" style="display:flex; gap:.4rem; align-items:center;">
+          <span aria-current="true" style="font-weight:700;">FR</span>
+          <span aria-hidden="true">|</span>
+          <span title="Bientôt disponible" style="opacity:.5; cursor:not-allowed;">EN</span>
+          <span aria-hidden="true">|</span>
+          <span title="Bientôt disponible" style="opacity:.5; cursor:not-allowed;">DE</span>
+        </div>
+
+        <a class="btn btn-solid btn-sm nav__cta" href="/contact/">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO (dégradé navy, SANS photo) ===================== -->
+  <!-- TODO: ajouter photos immobilier/chantier -->
+  <section class="section section--navy" aria-labelledby="hero-title">
+    <div class="container container--narrow text-center">
+      <span class="eyebrow">Immobilier &amp; Construction · pour la diaspora et la Guinée</span>
+      <h1 id="hero-title">Construisez en Guinée, <span class="accent">depuis votre téléphone</span></h1>
+      <p class="lead mx-auto">Vous vivez à l'étranger ou en Guinée et vous rêvez d'un terrain, d'une maison ou d'un investissement immobilier au pays ? LytraG est votre infrastructure de confiance : terrains et biens vérifiés, construction clé en main, fourniture de matériaux et gestion complète du chantier à distance. <strong>Votre présence sur place est optionnelle.</strong></p>
+
+      <div class="actions" style="justify-content:center;">
+        <a class="btn btn-solid btn-lg" href="/contact/">Démarrer un projet</a>
+        <a class="btn btn-whatsapp btn-lg" href="#" data-todo="whatsapp" target="_blank" rel="noopener">
+          <span aria-hidden="true">💬</span> WhatsApp <span style="opacity:.7;">(à compléter)</span>
+        </a>
+      </div>
+
+      <ul class="hero__checks" style="justify-content:center; margin-top: var(--space-6);">
+        <li>Terrains &amp; biens à titres vérifiés</li>
+        <li>Construction clé en main</li>
+        <li>Suivi photo &amp; vidéo à distance</li>
+        <li>Paiements par jalons sécurisés</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== BARRE DE CONFIANCE ===================== -->
+  <section class="trustbar" aria-label="Confiance">
+    <div class="container">
+      <div class="trustbar__inner">
+        <span class="trustbar__item"><strong>Titres vérifiés</strong>&nbsp;– achetez en confiance</span>
+        <span class="trustbar__item"><strong>Gestion à distance</strong>&nbsp;– tout depuis votre téléphone</span>
+        <span class="trustbar__item"><strong>Paiements par jalons</strong>&nbsp;– votre argent protégé</span>
+        <span class="trustbar__item"><strong>Suivi photo &amp; vidéo</strong>&nbsp;– transparence totale</span>
+        <span class="trustbar__item"><strong>Pour la diaspora</strong>&nbsp;– et les Guinéens du pays</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NOS PRESTATIONS ===================== -->
+  <section class="section" aria-labelledby="prestations-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Nos prestations</span>
+        <h2 id="prestations-title">De l'achat du terrain à la remise des clés</h2>
+        <p class="lead mx-auto">LytraG réunit tout ce dont vous avez besoin pour investir, construire et gérer un bien en Guinée — en un seul interlocuteur de confiance, où que vous soyez dans le monde.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">📜</span>
+          <h3>Terrains &amp; biens vérifiés</h3>
+          <p>Achetez un terrain ou un bien immobilier dont les titres et documents de propriété ont été contrôlés en amont. Fini les achats à l'aveugle et les litiges fonciers.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🏠</span>
+          <h3>Construction clé en main</h3>
+          <p>De la fondation aux finitions, nous prenons en charge votre projet de A à Z. Vous recevez une maison prête à vivre, sans avoir à coordonner les artisans vous-même.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🧱</span>
+          <h3>Fourniture de matériaux</h3>
+          <p>Ciment, fer, briques, finitions : nous fournissons des matériaux de qualité au juste prix et organisons leur livraison directement sur le chantier.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">📱</span>
+          <h3>Gestion à distance</h3>
+          <p>Pilotez tout votre projet depuis votre téléphone. Vous validez les étapes, suivez l'avancement et communiquez avec notre équipe sans jamais avoir à voyager.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🎥</span>
+          <h3>Suivi photo &amp; vidéo</h3>
+          <p>À chaque étape, vous recevez des photos et des vidéos du chantier. Vous voyez de vos propres yeux où en est votre projet, en temps réel.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">💳</span>
+          <h3>Paiements par jalons</h3>
+          <p>Vous payez étape par étape, uniquement après constatation du travail réalisé. Vos fonds sont protégés et servent réellement à faire avancer le chantier.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POURQUOI LYTRAG (Split, sans grande photo) ===================== -->
+  <section class="section section--alt" aria-labelledby="confiance-title">
+    <div class="container">
+      <div class="split">
+        <div class="split__text stack">
+          <span class="eyebrow">Pourquoi LytraG</span>
+          <h2 id="confiance-title">Une infrastructure de confiance, à distance</h2>
+          <p class="lead">Construire au pays depuis l'étranger fait peur, et à juste titre : argent envoyé sans nouvelles, travaux qui n'avancent pas, terrains vendus plusieurs fois. LytraG a été pensé pour mettre fin à ces inquiétudes.</p>
+          <ul class="checklist">
+            <li><strong>Transparence totale :</strong> photos, vidéos et rapports d'étape réguliers — vous savez toujours où va votre argent.</li>
+            <li><strong>Argent protégé :</strong> paiements débloqués par jalons, seulement quand le travail est constaté.</li>
+            <li><strong>Sécurité juridique :</strong> titres et documents vérifiés avant tout achat de terrain ou de bien.</li>
+            <li><strong>Un seul interlocuteur :</strong> nous coordonnons les équipes locales pour vous, vous ne gérez qu'avec LytraG.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-solid" href="/contact/">Parler de mon projet</a>
+            <a class="link-arrow" href="/contact/">Poser une question</a>
+          </div>
+        </div>
+        <div class="split__media">
+          <!-- TODO: ajouter photos immobilier/chantier -->
+          <div class="cta-band" style="height:100%; display:flex; align-items:center;">
+            <div class="cta-band__inner" style="text-align:center; width:100%;">
+              <span class="eyebrow">Votre présence est optionnelle</span>
+              <h2 style="margin:0;">Tout depuis<br>votre téléphone.</h2>
+              <p style="margin-top: var(--space-3);">Achetez, construisez et suivez votre chantier en Guinée, où que vous soyez dans le monde.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section section--navy section--tight" aria-label="LytraG immobilier en bref">
+    <div class="container">
+      <div class="stats stats--divided">
+        <div class="stat">
+          <div class="stat__num">100 %</div>
+          <div class="stat__label">À distance, si vous le souhaitez</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Vérifiés</div>
+          <div class="stat__label">Titres &amp; documents de propriété</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Par jalons</div>
+          <div class="stat__label">Paiements sécurisés par étapes</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Photo · Vidéo</div>
+          <div class="stat__label">Suivi de chantier en temps réel</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LES ÉTAPES DU PROJET ===================== -->
+  <section class="section" aria-labelledby="etapes-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Les étapes de votre projet</span>
+        <h2 id="etapes-title">Votre projet immobilier, étape par étape</h2>
+        <p class="lead mx-auto">Une méthode claire, du premier échange jusqu'à la remise des clés. À chaque jalon, vous décidez, vous validez et vous payez en confiance.</p>
+      </div>
+
+      <div class="grid grid-4 process">
+        <div class="process-step">
+          <span class="process-step__num">1</span>
+          <h3>Votre projet, vos besoins</h3>
+          <p>Vous nous décrivez votre objectif : acheter un terrain, construire une maison ou investir. Nous étudions ensemble la faisabilité et le budget.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">2</span>
+          <h3>Terrain &amp; titres vérifiés</h3>
+          <p>Nous identifions le terrain ou le bien adapté et vérifions les titres de propriété, pour que vous achetiez en toute sécurité.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">3</span>
+          <h3>Construction &amp; suivi à distance</h3>
+          <p>Nous lançons les travaux et la fourniture des matériaux. Vous suivez le chantier par photos et vidéos, et validez chaque étape.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">4</span>
+          <h3>Remise des clés</h3>
+          <p>Votre bien est livré, conforme à ce qui a été convenu. Vous recevez les clés et tous les documents — un projet abouti, sans stress.</p>
+        </div>
+      </div>
+
+      <div class="actions" style="justify-content:center; margin-top: var(--space-7);">
+        <a class="btn btn-solid btn-lg" href="/contact/">Démarrer un projet</a>
+        <a class="btn btn-whatsapp btn-lg" href="#" data-todo="whatsapp" target="_blank" rel="noopener">
+          <span aria-hidden="true">💬</span> Écrire sur WhatsApp <span style="opacity:.7;">(à compléter)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== POUR QUI ===================== -->
+  <section class="section section--alt" aria-labelledby="pourqui-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Pour qui</span>
+        <h2 id="pourqui-title">Pensé pour la diaspora — ouvert à tous</h2>
+        <p class="lead mx-auto">Que vous viviez à l'étranger ou en Guinée, LytraG vous accompagne dans votre projet immobilier avec la même exigence de confiance et de transparence.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🌍</span>
+          <h3>La diaspora africaine</h3>
+          <p>Investissez et construisez au pays sans avoir à tout quitter. Vous pilotez votre projet à distance et gardez le contrôle, à chaque étape.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🇬🇳</span>
+          <h3>Les Guinéens du pays</h3>
+          <p>Vous êtes sur place et manquez de temps pour gérer un chantier ? Confiez-nous la coordination et concentrez-vous sur l'essentiel.</p>
+        </article>
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">📈</span>
+          <h3>Les investisseurs</h3>
+          <p>Terrains, logements locatifs ou projets de revente : nous sécurisons votre investissement immobilier en Guinée, du titre au chantier.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2 id="faq-title">Vos questions sur l'immobilier &amp; la construction</h2>
+        <p class="lead mx-auto">Une autre question ? Écrivez-nous par e-mail ou sur WhatsApp — nous vous répondons avec plaisir.</p>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Puis-je construire en Guinée depuis l'étranger sans me déplacer ?</summary>
+          <div class="faq-item__body">
+            <p>Oui. C'est tout l'objet de LytraG : votre présence sur place est optionnelle. Vous suivez l'avancement de votre chantier à distance grâce à des photos et vidéos régulières, et vous validez chaque étape depuis votre téléphone. Nous coordonnons les équipes locales pour vous, en toute transparence.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment puis-je être sûr que le terrain ou le bien est légitime ?</summary>
+          <div class="faq-item__body">
+            <p>Nous vérifions les titres et documents de propriété avant tout achat. Vous recevez un dossier clair sur le bien, sa situation et ses papiers, afin d'acheter en confiance et d'éviter les litiges fonciers.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment se font les paiements pour un projet de construction ?</summary>
+          <div class="faq-item__body">
+            <p>Les paiements sont organisés par jalons (étapes) : vous ne payez chaque phase qu'une fois le travail réalisé et constaté. Cela protège votre argent et garantit que les fonds servent réellement à faire avancer votre projet.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Proposez-vous aussi les matériaux de construction ?</summary>
+          <div class="faq-item__body">
+            <p>Oui. LytraG peut fournir les matériaux nécessaires à votre chantier (ciment, fer, briques, finitions, etc.) et coordonner leur livraison sur le site, pour vous éviter les mauvaises surprises de qualité ou de prix.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment démarrer un projet avec LytraG ?</summary>
+          <div class="faq-item__body">
+            <p>C'est simple : <a href="/contact/">contactez-nous</a> par e-mail ou sur WhatsApp et décrivez-nous votre projet. Nous revenons vers vous pour étudier ensemble la faisabilité, le budget et les étapes, sans engagement.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GRAND CTA ===================== -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner cta-band--split">
+        <div>
+          <span class="eyebrow">Votre projet au pays commence ici</span>
+          <h2>Prêt à acheter, construire ou investir en Guinée ?</h2>
+          <p>Parlez-nous de votre projet immobilier. Que vous soyez dans la diaspora ou en Guinée, nous vous accompagnons en toute confiance — de l'achat du terrain jusqu'à la remise des clés.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-solid btn-lg" href="/contact/">Démarrer un projet</a>
+          <a class="btn btn-whatsapp btn-lg" href="#" data-todo="whatsapp" target="_blank" rel="noopener">
+            <span aria-hidden="true">💬</span> WhatsApp <span style="opacity:.7;">(à compléter)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div class="footer-brand">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo-dark.png" alt="Logo LytraG Guinée">
+        <p>LytraG, plateforme digitale tout-en-un pour la Guinée et la diaspora : place de marché, immobilier &amp; construction, et services numériques.</p>
+        <span class="rating">Une entreprise du groupe LytraG (Allemagne &amp; Guinée)</span>
+      </div>
+
+      <nav aria-label="Nos pôles">
+        <h4>Nos pôles</h4>
+        <ul class="footer-list">
+          <li><a href="/marketplace/">Place de marché</a></li>
+          <li><a href="/immobilier/">Immobilier &amp; Construction</a></li>
+          <li><a href="/services/">Services numériques</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="LytraG">
+        <h4>LytraG</h4>
+        <ul class="footer-list">
+          <li><a href="/a-propos/">À propos</a></li>
+          <li><a href="https://lytrag.com" target="_blank" rel="noopener">LytraG-System Allemagne</a></li>
+          <li><a href="/marketplace/">Devenir vendeur</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Contact</h4>
+        <address class="footer-contact">
+          <span><strong>LytraG Guinée</strong><br>Conakry, Guinée</span>
+          <span><span class="label">E-mail</span><br><a href="/cdn-cgi/l/email-protection#284b47465c494b5c6844515c5a494f06475a4f"><span class="__cf_email__" data-cfemail="0a6965647e6b697e4a66737e786b6d2465786d">[email&#160;protected]</span></a></span>
+          <span><span class="label">WhatsApp</span><br><a href="#" data-todo="whatsapp">WhatsApp</a> · <em>(à compléter)</em></span>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bar">
+      <span>© 2026 LytraG · Fondateurs Abdoulaye Traoré &amp; Amadou Ly</span>
+      <nav aria-label="Langue">
+        <span style="font-weight:700;">FR</span>
+        <span style="opacity:.5;">EN</span>
+        <span style="opacity:.5;">DE</span>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BOUTONS FLOTTANTS ===================== -->
+<div class="floating-actions">
+  <a class="fab fab--call" href="tel:" aria-label="Appeler (numéro à compléter)">
+    <span class="icon" aria-hidden="true">📞</span>
+  </a>
+  <a class="fab fab--whatsapp" href="#" data-todo="whatsapp" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp (numéro à compléter)">
+    <span class="icon" aria-hidden="true">💬</span>
+  </a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

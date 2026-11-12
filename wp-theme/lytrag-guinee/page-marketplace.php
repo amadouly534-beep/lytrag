@@ -1,0 +1,541 @@
+<?php /* Template: komplette Seite, 1:1 aus lytrag.org */ ?>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Place de marché LytraG | Acheter &amp; vendre en ligne en Guinée</title>
+<meta name="description" content="La place de marché LytraG en Guinée : achetez en ligne (électronique, mode, maison, alimentation, cosmétiques, matériaux, véhicules) et devenez vendeur. Paiement Orange Money, livraison via WhatsApp et partage de localisation. Lancement bientôt.">
+<link rel="canonical" href="https://www.lytrag.org/marketplace.html">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="LytraG">
+<meta property="og:title" content="Place de marché LytraG | Acheter &amp; vendre en ligne en Guinée">
+<meta property="og:description" content="Achetez en ligne et ouvrez votre boutique sur la place de marché LytraG. Paiement Orange Money, livraison via WhatsApp et géolocalisation. Lancement bientôt.">
+<meta property="og:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/marche.jpg">
+<meta property="og:url" content="https://www.lytrag.org/marketplace.html">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Place de marché LytraG | Acheter &amp; vendre en ligne en Guinée">
+<meta name="twitter:description" content="Achetez en ligne et ouvrez votre boutique sur la place de marché LytraG. Paiement Orange Money, livraison via WhatsApp et géolocalisation. Lancement bientôt.">
+<meta name="twitter:image" content="<?php echo esc_url(get_template_directory_uri()); ?>/assets/marche.jpg">
+
+<link rel="icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/favicon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="<?php echo esc_url(get_template_directory_uri()); ?>/assets/favicon-512.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo esc_url(get_template_directory_uri()); ?>/design.css">
+
+<!-- JSON-LD: WebPage / Place de marché -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Place de marché LytraG",
+  "url": "https://www.lytrag.org/marketplace.html",
+  "description": "Place de marché en ligne pour la Guinée : acheter et vendre des produits, paiement Orange Money, livraison via WhatsApp et géolocalisation.",
+  "inLanguage": "fr",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "LytraG",
+    "url": "https://www.lytrag.org/"
+  },
+  "about": {
+    "@type": "Organization",
+    "name": "LytraG",
+    "url": "https://www.lytrag.org/",
+    "email": "contact@lytrag.org",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Conakry",
+      "addressCountry": "GN"
+    }
+  }
+}
+</script>
+
+<!-- JSON-LD: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Qu'est-ce que la place de marché LytraG ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La place de marché LytraG est une plateforme en ligne où les Guinéens peuvent acheter ET vendre des produits : électronique, mode, maison, alimentation, cosmétiques, matériaux de construction, véhicules et bien plus. Le paiement se fait par Orange Money et la livraison s'organise via WhatsApp avec partage de votre localisation. Le lancement aura lieu très bientôt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment devenir vendeur sur LytraG ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Devenir vendeur est simple et gratuit pour démarrer : contactez-nous pour réserver votre boutique. Vous publiez vos produits, fixez vos prix en francs guinéens (FG) et touchez des clients dans toute la Guinée. Nous vous accompagnons pour la mise en ligne, les paiements Orange Money et l'organisation des livraisons par WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment se passe le paiement sur la place de marché ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le paiement principal est Orange Money : vous réglez directement depuis votre téléphone, sans carte bancaire. C'est rapide, sûr et déjà utilisé partout en Guinée. D'autres moyens de paiement mobile seront ajoutés progressivement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment fonctionne la livraison ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La livraison s'organise via WhatsApp. Après votre commande, vous partagez votre localisation (géolocalisation) avec le vendeur ou notre équipe, et le livreur vous trouve facilement, même sans adresse postale précise. Vous suivez votre commande directement dans la conversation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quand la place de marché sera-t-elle disponible ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La place de marché LytraG est en cours de lancement. Les premières boutiques et les premiers produits arrivent très bientôt. Inscrivez-vous dès maintenant comme vendeur ou laissez-nous votre contact pour être prévenu de l'ouverture."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="LytraG – Accueil">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo.png" alt="Logo LytraG">
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <input type="checkbox" id="navt" class="nav-toggle" aria-label="Ouvrir et fermer le menu">
+        <label for="navt" class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></label>
+
+        <div class="nav__panel">
+          <ul class="nav__list">
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/marketplace/" aria-current="page">Place de marché</a></li>
+            <li><a href="/immobilier/">Immobilier &amp; Construction</a></li>
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/a-propos/">À propos</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+
+          <div class="lang-switch" aria-label="Choix de la langue">
+            <a class="lang-switch__item is-active" href="/marketplace/" aria-current="true">FR</a>
+            <span class="lang-switch__item is-disabled" aria-disabled="true" title="Bientôt disponible">EN</span>
+            <span class="lang-switch__item is-disabled" aria-disabled="true" title="Bientôt disponible">DE</span>
+          </div>
+
+          <div class="nav__cta-mobile">
+            <a class="btn btn-solid btn-block" href="/contact/">Nous contacter</a>
+          </div>
+        </div>
+
+        <a class="btn btn-solid btn-sm nav__cta" href="/contact/">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__text">
+          <span class="eyebrow">Place de marché · Lancement bientôt</span>
+          <h1>Achetez et <span class="accent">vendez en ligne</span> partout en Guinée</h1>
+          <p class="lead">La place de marché LytraG réunit acheteurs et vendeurs dans un espace simple et de confiance : électronique, mode, maison, alimentation, cosmétiques, matériaux, véhicules… Commandez en quelques clics, payez par Orange Money et faites-vous livrer grâce à WhatsApp et au partage de votre localisation.</p>
+
+          <div class="actions">
+            <a class="btn btn-solid btn-lg" href="#vendeur">Devenez vendeur</a>
+            <a class="btn btn-ghost btn-lg" href="#categories">Voir les catégories</a>
+          </div>
+
+          <ul class="hero__checks">
+            <li>Acheter ET vendre, au même endroit</li>
+            <li>Paiement simple par Orange Money</li>
+            <li>Livraison via WhatsApp &amp; géolocalisation</li>
+            <li>Ouvrez votre boutique en quelques minutes</li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/marche.jpg" alt="La place de marché LytraG : acheter et vendre en ligne en Guinée" width="800" height="533">
+          <div class="hero__badge">
+            <span aria-hidden="true">🛍️</span>
+            <span><strong>Lancement bientôt</strong><br>Soyez parmi les premiers vendeurs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BARRE DE CONFIANCE ===================== -->
+  <section class="trustbar" aria-label="La place de marché en bref">
+    <div class="container">
+      <div class="trustbar__inner">
+        <span class="trustbar__item"><strong>Multi-vendeurs</strong>&nbsp;– des centaines de boutiques à venir</span>
+        <span class="trustbar__item"><strong>Orange Money</strong>&nbsp;– paiement simple et sûr</span>
+        <span class="trustbar__item"><strong>Livraison WhatsApp</strong>&nbsp;– avec votre localisation</span>
+        <span class="trustbar__item"><strong>Prix en FG</strong>&nbsp;– francs guinéens</span>
+        <span class="trustbar__item"><strong>Lancement bientôt</strong>&nbsp;– inscrivez-vous dès maintenant</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATÉGORIES ===================== -->
+  <section id="categories" class="section" aria-labelledby="categories-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Acheter en ligne</span>
+        <h2 id="categories-title">Tout ce dont vous avez besoin, en un seul endroit</h2>
+        <p class="lead mx-auto">Des milliers de produits de vendeurs guinéens, classés par catégories pour trouver rapidement ce que vous cherchez. De l'électronique aux matériaux de construction, en passant par la mode et l'alimentation.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">📱</span>
+          <h3>Électronique</h3>
+          <p>Téléphones, ordinateurs, accessoires, appareils électroménagers et high-tech, neufs et reconditionnés.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">👗</span>
+          <h3>Mode &amp; habillement</h3>
+          <p>Vêtements, chaussures, tissus, accessoires et tenues traditionnelles pour femmes, hommes et enfants.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🏠</span>
+          <h3>Maison &amp; cuisine</h3>
+          <p>Meubles, ustensiles, décoration, literie et tout l'équipement pour aménager votre maison.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🛒</span>
+          <h3>Alimentation</h3>
+          <p>Produits du marché, épicerie, denrées locales et importées, livrés près de chez vous.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">💄</span>
+          <h3>Cosmétiques &amp; beauté</h3>
+          <p>Soins, parfums, maquillage, produits capillaires et articles de beauté pour tous.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🧱</span>
+          <h3>Matériaux de construction</h3>
+          <p>Ciment, fer, carrelage, peinture, outillage et fournitures pour vos chantiers et travaux.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🚗</span>
+          <h3>Véhicules &amp; pièces</h3>
+          <p>Voitures, motos, pièces détachées et accessoires automobiles proposés par des vendeurs de confiance.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">🛠️</span>
+          <h3>Services &amp; artisanat</h3>
+          <p>Petits services, créations artisanales et savoir-faire locaux à découvrir et commander.</p>
+        </article>
+
+        <article class="icon-card">
+          <span class="icon-badge" aria-hidden="true">➕</span>
+          <h3>Et bien plus encore</h3>
+          <p>De nouvelles catégories arrivent régulièrement au rythme des boutiques qui rejoignent LytraG.</p>
+        </article>
+
+      </div>
+
+      <div class="actions" style="justify-content:center; margin-top: var(--space-7);">
+        <a class="btn btn-solid" href="#vendeur">Vendre dans ces catégories</a>
+        <a class="btn btn-whatsapp" href="#" data-todo="numéro WhatsApp à compléter" target="_blank" rel="noopener">
+          <span aria-hidden="true">💬</span> Écrire sur WhatsApp <span style="opacity:.7;">(à compléter)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEVENEZ VENDEUR (Split) ===================== -->
+  <section id="vendeur" class="section section--alt" aria-labelledby="vendeur-title">
+    <div class="container">
+      <div class="split split--media-first">
+        <div class="split__media">
+          <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/accueil-hero.jpg" alt="Ouvrez votre boutique en ligne sur la place de marché LytraG" loading="lazy">
+        </div>
+        <div class="split__text stack">
+          <span class="eyebrow">Devenez vendeur</span>
+          <h2 id="vendeur-title">Ouvrez votre boutique et touchez toute la Guinée</h2>
+          <p class="lead">Vous avez des produits à vendre ? Avec LytraG, vous ouvrez votre boutique en ligne en quelques minutes et vous présentez vos articles à des milliers de clients, à Conakry comme dans tout le pays — sans local commercial coûteux.</p>
+          <ul class="checklist">
+            <li><strong>Inscription simple :</strong> créez votre boutique et publiez vos premiers produits rapidement, gratuitement pour démarrer.</li>
+            <li><strong>Vos prix, en FG :</strong> vous fixez vos prix en francs guinéens et gardez la main sur votre catalogue.</li>
+            <li><strong>Paiements Orange Money :</strong> vos clients règlent facilement depuis leur téléphone, en toute confiance.</li>
+            <li><strong>Livraison organisée par WhatsApp :</strong> le client partage sa localisation, vous livrez sans difficulté.</li>
+            <li><strong>Accompagnement humain :</strong> notre équipe vous aide à mettre en ligne, prendre de belles photos et vendre mieux.</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn-solid" href="/contact/">Inscrire ma boutique</a>
+            <a class="btn btn-whatsapp" href="#" data-todo="numéro WhatsApp à compléter" target="_blank" rel="noopener">
+              <span aria-hidden="true">💬</span> WhatsApp vendeur <span style="opacity:.7;">(à compléter)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVANTAGES (CLIENTS & VENDEURS) ===================== -->
+  <section class="section" aria-labelledby="avantages-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Pourquoi LytraG</span>
+        <h2 id="avantages-title">Gagnant pour les clients comme pour les vendeurs</h2>
+        <p class="lead mx-auto">Nous construisons une place de marché adaptée à la réalité de la Guinée : paiement mobile, livraison par localisation et un service proche de vous, des deux côtés de la transaction.</p>
+      </div>
+
+      <div class="grid grid-2">
+
+        <article class="service-card">
+          <div class="service-card__body">
+            <h3>Pour les clients</h3>
+            <ul class="checklist">
+              <li><strong>Un large choix :</strong> des produits de nombreux vendeurs, réunis sur une seule plateforme.</li>
+              <li><strong>Des prix clairs :</strong> tout est affiché en francs guinéens (FG), sans mauvaise surprise.</li>
+              <li><strong>Paiement Orange Money :</strong> réglez en quelques secondes depuis votre téléphone.</li>
+              <li><strong>Livraison près de chez vous :</strong> partagez votre position sur WhatsApp, on vous trouve.</li>
+              <li><strong>Achat en confiance :</strong> des vendeurs identifiés et une équipe LytraG à votre écoute.</li>
+            </ul>
+            <a class="link-arrow" href="#categories">Découvrir les catégories</a>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__body">
+            <h3>Pour les vendeurs</h3>
+            <ul class="checklist">
+              <li><strong>Plus de clients :</strong> vendez bien au-delà de votre quartier, dans toute la Guinée.</li>
+              <li><strong>Sans local coûteux :</strong> votre boutique est en ligne, ouverte 24h/24.</li>
+              <li><strong>Encaissez par Orange Money :</strong> des paiements mobiles simples et sûrs.</li>
+              <li><strong>Livraison facilitée :</strong> organisez vos livraisons via WhatsApp et la géolocalisation.</li>
+              <li><strong>Accompagnement :</strong> nous vous aidons à démarrer et à développer vos ventes.</li>
+            </ul>
+            <a class="link-arrow" href="#vendeur">Devenir vendeur</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMMENT ÇA MARCHE ===================== -->
+  <section class="section section--alt" aria-labelledby="etapes-title">
+    <div class="container">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Comment ça marche</span>
+        <h2 id="etapes-title">Acheter sur LytraG, en quatre étapes simples</h2>
+        <p class="lead mx-auto">Commander sur la place de marché est aussi simple qu'envoyer un message. Pas besoin d'être un expert du numérique.</p>
+      </div>
+
+      <div class="grid grid-4 process">
+        <div class="process-step">
+          <span class="process-step__num">1</span>
+          <h3>Choisissez vos produits</h3>
+          <p>Parcourez les boutiques par catégorie et ajoutez à votre panier ce qui vous plaît, depuis votre téléphone.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">2</span>
+          <h3>Payez par Orange Money</h3>
+          <p>Réglez votre commande directement depuis votre téléphone, sans carte bancaire — simple et sécurisé.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">3</span>
+          <h3>Partagez votre localisation</h3>
+          <p>Sur WhatsApp, vous envoyez votre position. Le livreur vous trouve facilement, même sans adresse précise.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">4</span>
+          <h3>Recevez votre commande</h3>
+          <p>Vous suivez la livraison dans la conversation WhatsApp et recevez vos produits chez vous, en confiance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATS / EN BREF ===================== -->
+  <section class="section section--navy section--tight" aria-label="La place de marché LytraG en bref">
+    <div class="container">
+      <div class="stats stats--divided">
+        <div class="stat">
+          <div class="stat__num">Bientôt</div>
+          <div class="stat__label">Lancement de la plateforme</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">Orange&nbsp;Money</div>
+          <div class="stat__label">Paiement principal</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">WhatsApp</div>
+          <div class="stat__label">Livraison &amp; suivi</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">FG</div>
+          <div class="stat__label">Prix en francs guinéens</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section" aria-labelledby="faq-title">
+    <div class="container container--narrow">
+      <div class="section-head text-center mx-auto">
+        <span class="eyebrow">Questions fréquentes</span>
+        <h2 id="faq-title">Vos questions sur la place de marché</h2>
+        <p class="lead mx-auto">Une autre question ? Écrivez-nous par e-mail ou sur WhatsApp — nous vous répondons avec plaisir.</p>
+      </div>
+
+      <div class="faq">
+        <details class="faq-item">
+          <summary>Qu'est-ce que la place de marché LytraG ?</summary>
+          <div class="faq-item__body">
+            <p>La place de marché LytraG est une plateforme en ligne où les Guinéens peuvent acheter ET vendre des produits : électronique, mode, maison, alimentation, cosmétiques, matériaux de construction, véhicules et bien plus. Le paiement se fait par Orange Money et la livraison s'organise via WhatsApp avec partage de votre localisation. Le lancement aura lieu très bientôt.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment devenir vendeur sur LytraG ?</summary>
+          <div class="faq-item__body">
+            <p>Devenir vendeur est simple et gratuit pour démarrer : <a href="/contact/">contactez-nous</a> pour réserver votre boutique. Vous publiez vos produits, fixez vos prix en francs guinéens (FG) et touchez des clients dans toute la Guinée. Nous vous accompagnons pour la mise en ligne, les paiements Orange Money et l'organisation des livraisons par WhatsApp.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment se passe le paiement sur la place de marché ?</summary>
+          <div class="faq-item__body">
+            <p>Le paiement principal est Orange Money : vous réglez directement depuis votre téléphone, sans carte bancaire. C'est rapide, sûr et déjà utilisé partout en Guinée. D'autres moyens de paiement mobile seront ajoutés progressivement.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment fonctionne la livraison ?</summary>
+          <div class="faq-item__body">
+            <p>La livraison s'organise via WhatsApp. Après votre commande, vous partagez votre localisation (géolocalisation) avec le vendeur ou notre équipe, et le livreur vous trouve facilement, même sans adresse postale précise. Vous suivez votre commande directement dans la conversation.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Quand la place de marché sera-t-elle disponible ?</summary>
+          <div class="faq-item__body">
+            <p>La place de marché LytraG est en cours de lancement. Les premières boutiques et les premiers produits arrivent très bientôt. <a href="/contact/">Inscrivez-vous</a> dès maintenant comme vendeur ou laissez-nous votre contact pour être prévenu de l'ouverture.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GRAND CTA ===================== -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="cta-band__inner cta-band--split">
+        <div>
+          <span class="eyebrow">Lancement bientôt</span>
+          <h2>Prêt à vendre — ou à acheter — sur LytraG ?</h2>
+          <p>Que vous soyez commerçant prêt à ouvrir votre boutique ou client à la recherche de bons produits, écrivez-nous dès aujourd'hui. Soyez parmi les premiers à rejoindre la place de marché de la Guinée.</p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-solid btn-lg" href="/contact/">Inscrire ma boutique</a>
+          <a class="btn btn-whatsapp btn-lg" href="#" data-todo="numéro WhatsApp à compléter" target="_blank" rel="noopener">
+            <span aria-hidden="true">💬</span> WhatsApp <span style="opacity:.7;">(à compléter)</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div class="footer-brand">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/logo-dark.png" alt="Logo LytraG Guinée">
+        <p>LytraG, votre plateforme tout-en-un pour acheter, vendre, construire et passer au numérique en Guinée. Une entreprise du groupe LytraG (Allemagne &amp; Guinée).</p>
+        <span class="rating">Orange Money · Livraison WhatsApp &amp; localisation</span>
+      </div>
+
+      <nav aria-label="Nos pôles">
+        <h4>Nos pôles</h4>
+        <ul class="footer-list">
+          <li><a href="/marketplace/">Place de marché</a></li>
+          <li><a href="/immobilier/">Immobilier &amp; Construction</a></li>
+          <li><a href="/services/">Services numériques</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="LytraG">
+        <h4>LytraG</h4>
+        <ul class="footer-list">
+          <li><a href="/a-propos/">À propos</a></li>
+          <li><a href="https://lytrag.com" target="_blank" rel="noopener">LytraG-System (Allemagne)</a></li>
+          <li><a href="marketplace.html#vendeur">Devenir vendeur</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h4>Contact</h4>
+        <address class="footer-contact">
+          <span><strong>LytraG Guinée</strong><br>Conakry, Guinée</span>
+          <span><span class="label">E-mail</span><br><a href="/cdn-cgi/l/email-protection#492a26273d282a3d0925303d3b282e67263b2e"><span class="__cf_email__" data-cfemail="a7c4c8c9d3c6c4d3e7cbded3d5c6c089c8d5c0">[email&#160;protected]</span></a></span>
+          <span><span class="label">WhatsApp</span><br><a href="#" data-todo="numéro WhatsApp à compléter" target="_blank" rel="noopener">WhatsApp</a> · <em>(à compléter)</em></span>
+          <span><span class="label">Téléphone</span><br><em>(à compléter)</em></span>
+        </address>
+      </div>
+
+    </div>
+
+    <div class="site-footer__bar">
+      <span>© 2026 LytraG · Fondateurs Abdoulaye Traoré &amp; Amadou Ly</span>
+      <nav aria-label="Langue">
+        <span style="font-weight:700;">FR</span>
+        <span style="opacity:.5;">EN</span>
+        <span style="opacity:.5;">DE</span>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BOUTONS FLOTTANTS ===================== -->
+<div class="floating-actions">
+  <a class="fab fab--call" href="tel:" aria-label="Appeler (numéro à compléter)">
+    <span class="icon" aria-hidden="true">📞</span>
+  </a>
+  <a class="fab fab--whatsapp" href="#" data-todo="numéro WhatsApp à compléter" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp (numéro à compléter)">
+    <span class="icon" aria-hidden="true">💬</span>
+  </a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
